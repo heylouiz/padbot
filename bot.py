@@ -42,10 +42,13 @@ def reply(bot, update):
     if "projeto" in message:
         update.message.reply_text("Ta pronto?")
         return
+    if "parabens" in message or "parabéns" in message:
+        update.message.reply_text("Parabéns @raoniff!")
+        return
 
     # By Name
     if "raoni" in name:
-        resp = ["Rrrrrrrraoniii", "Raonildo"]
+        resp = ["Rrrrrrrraoniii", "Raonildo", "Parabéns raoni!"]
     if "luiz" in name:
         resp = ["Luizerararara", "DEU..... zig zeira", "Zigzerarara"]
     if "max" in name:
